@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FiveWordsFiveLetters
 {
@@ -12,37 +8,36 @@ namespace FiveWordsFiveLetters
     {
         static void Main(string[] args)
         {
-            Stopwatch sw = Stopwatch.StartNew();
-
             string filePath = @"C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\Words.txt";
             string[] lines = File.ReadAllLines(filePath);
 
+            List<string> handledWords = new List<string>();
+
             // Filter words from file
-            List<string> handledWords = lines.Where(line => IsValidWord(line)).ToList();
-
-            ConcurrentBag<string> allCombinations = new ConcurrentBag<string>(); // Thread-safe collection
-
-            // Find combinations of 5 words using parallel processing
-            Parallel.ForEach(handledWords, (word, state) =>
+            foreach (string line in lines)
             {
-                List<string> selectedWords = new List<string> { word };
-                HashSet<char> usedLetters = new HashSet<char>(word);
+                if (IsValidWord(line))
+                {
+                    handledWords.Add(line);
+                }
+            }
 
-                FindFiveWords(handledWords, selectedWords, usedLetters, allCombinations, 0);
-            });
+            List<string> selectedWords = new List<string>();
+            HashSet<char> usedLetters = new HashSet<char>();
+            List<string> allCombinations = new List<string>(); // To store all combinations
 
+            // Find combinations of 5 words
+            FindFiveWords(handledWords, selectedWords, usedLetters, 0, allCombinations);
 
-            sw.Stop();
             // Output
             if (allCombinations.Count > 0)
             {
                 Console.WriteLine("Found combinations of words:");
-                foreach (var combo in allCombinations.Distinct())
+                foreach (var combo in allCombinations)
                 {
                     Console.WriteLine(combo);
                 }
                 Console.WriteLine($"Total combinations found: {allCombinations.Count}");
-                Console.WriteLine(sw.ElapsedMilliseconds);
             }
             else
             {
@@ -52,15 +47,31 @@ namespace FiveWordsFiveLetters
 
         private static bool IsValidWord(string text)
         {
-            return text.Length == 5 && text.Distinct().Count() == text.Length;
+            // Check if word is 5 chars
+            if (text.Length != 5)
+            {
+                return false;
+            }
+
+            // Check for duplicate chars
+            var charSet = new HashSet<char>();
+            foreach (char c in text)
+            {
+                if (!charSet.Add(c))
+                {
+                    return false; // Duplicate
+                }
+            }
+
+            return true; // Valid
         }
 
-        private static void FindFiveWords(List<string> words, List<string> selectedWords, HashSet<char> usedLetters, ConcurrentBag<string> allCombinations, int startIndex)
+        private static void FindFiveWords(List<string> words, List<string> selectedWords, HashSet<char> usedLetters, int startIndex, List<string> allCombinations)
         {
             // If 5 words selected, output them
             if (selectedWords.Count == 5)
             {
-                allCombinations.Add(string.Join(", ", selectedWords)); // Add the combination to the bag
+                allCombinations.Add(string.Join(", ", selectedWords)); // Add the combination to the list
                 return; // Return for more combinations
             }
 
@@ -80,7 +91,7 @@ namespace FiveWordsFiveLetters
                     }
 
                     // Find next word
-                    FindFiveWords(words, selectedWords, usedLetters, allCombinations, i + 1);
+                    FindFiveWords(words, selectedWords, usedLetters, i + 1, allCombinations);
 
                     // Remove word and its chars
                     selectedWords.RemoveAt(selectedWords.Count - 1);
@@ -94,7 +105,15 @@ namespace FiveWordsFiveLetters
 
         private static bool CanAddWord(string word, HashSet<char> usedLetters)
         {
-            return word.All(c => !usedLetters.Contains(c)); // Check if chars are already used
+            // Check if chars are already used
+            foreach (char c in word)
+            {
+                if (usedLetters.Contains(c))
+                {
+                    return false; // Invalid
+                }
+            }
+            return true; // Valid
         }
     }
 }
