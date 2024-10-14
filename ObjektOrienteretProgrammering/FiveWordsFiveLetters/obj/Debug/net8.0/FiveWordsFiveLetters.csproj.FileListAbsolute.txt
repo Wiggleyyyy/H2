@@ -1,0 +1,14 @@
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.AssemblyInfoInputs.cache
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.AssemblyInfo.cs
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.csproj.CoreCompileInputs.cache
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\bin\Debug\net8.0\FiveWordsFiveLetters.exe
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\bin\Debug\net8.0\FiveWordsFiveLetters.deps.json
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\bin\Debug\net8.0\FiveWordsFiveLetters.runtimeconfig.json
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\bin\Debug\net8.0\FiveWordsFiveLetters.dll
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\bin\Debug\net8.0\FiveWordsFiveLetters.pdb
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.dll
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\refint\FiveWordsFiveLetters.dll
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.pdb
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\FiveWordsFiveLetters.genruntimeconfig.cache
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\obj\Debug\net8.0\ref\FiveWordsFiveLetters.dll
