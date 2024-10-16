@@ -1,0 +1,11 @@
+BaseLineCollection: 
+- Fill: 12 ms
+- Sort: 0 ms
+- Print: 26 ms
+- Total :38 ms
+
+ListCollection: 
+- Fill: 8 ms
+- Sort: 0 ms
+- Print: 6 ms
+- Total :14 ms

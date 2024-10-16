@@ -1,0 +1,51 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\obj\Release\net8.0/" /p:OutDir="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0/" /p:OutputPath="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0/" in C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf
+// command took 1.11 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\obj\Release\net8.0/" /p:OutDir="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0/" /p:OutputPath="C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0/" --output "C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0/" in C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf
+// command took 4 sec and exited with 0
+// ***** Done, took 00:00:14 (14.5 sec)   *****
+// Found 2 benchmarks:
+//   CollectionBenchmark.TestArrayFill: DefaultJob
+//   CollectionBenchmark.TestArraySort: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Høj ydeevne)
+// **************************
+// Benchmark: CollectionBenchmark.TestArrayFill: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf.dll --anonymousPipes 1412 1408 --benchmarkName Collections.Benchmark.CollectionBenchmark.TestArrayFill --job Default --benchmarkId 0 in C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\Collections\bin\Release\net8.0\4e14fdf3-5db2-4d69-bf9f-ef66b4b23abf\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 167800.00 ns, 167.8000 us/op
+WorkloadJitting  1: 1 op, 780700.00 ns, 780.7000 us/op
+
+OverheadJitting  2: 16 op, 205400.00 ns, 12.8375 us/op
+WorkloadJitting  2: 16 op, 6727000.00 ns, 420.4375 us/op
+
+WorkloadPilot    1: 16 op, 6949400.00 ns, 434.3375 us/op
+WorkloadPilot    2: 32 op, 13348900.00 ns, 417.1531 us/op
+WorkloadPilot    3: 64 op, 28466500.00 ns, 444.7891 us/op
+WorkloadPilot    4: 128 op, 53795700.00 ns, 420.2789 us/op
+WorkloadPilot    5: 256 op, 102654500.00 ns, 400.9941 us/op
+WorkloadPilot    6: 512 op, 194259000.00 ns, 379.4121 us/op
+WorkloadPilot    7: 1024 op, 384633600.00 ns, 375.6188 us/op
+WorkloadPilot    8: 2048 op, 772936300.00 ns, 377.4103 us/op
+
+OverheadWarmup   1: 2048 op, 5200.00 ns, 2.5391 ns/op
+OverheadWarmup   2: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadWarmup   3: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadWarmup   4: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadWarmup   5: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadWarmup   6: 2048 op, 4600.00 ns, 2.2461 ns/op
+
+OverheadActual   1: 2048 op, 4500
