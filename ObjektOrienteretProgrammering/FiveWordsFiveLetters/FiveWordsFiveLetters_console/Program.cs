@@ -21,7 +21,7 @@ namespace FiveWordsFiveLetters
 
             // Load and pre-filter words efficiently
             var words = new List<string>();
-            using (var file = new StreamReader(@"C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\Words.txt"))
+            using (var file = new StreamReader(@"C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_console\Words.txt"))
             {
                 string line;
                 while ((line = file.ReadLine()) != null)

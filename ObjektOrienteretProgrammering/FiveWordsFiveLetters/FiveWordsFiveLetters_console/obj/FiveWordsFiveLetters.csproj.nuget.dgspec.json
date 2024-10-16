@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters.csproj": {}
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters.csproj": {
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj",
         "projectName": "FiveWordsFiveLetters",
-        "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HFGF\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj": {}
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj": {
+    "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
         "projectName": "FiveWordsFiveLetters_wpf",
-        "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters_wpf\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HFGF\\AppData\\Roaming\\NuGet\\NuGet.Config",

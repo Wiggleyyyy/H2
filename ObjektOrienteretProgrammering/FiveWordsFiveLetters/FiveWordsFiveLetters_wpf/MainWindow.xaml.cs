@@ -57,8 +57,8 @@ namespace FiveWordsFiveLetters_wpf
             var bgWorker = sender as BackgroundWorker;
 
             // Load and pre-filter words
-            var words = new List<string>();
-            using (var file = new StreamReader(@"C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\Words.txt"))
+            List<string> words = new List<string>();
+            using (var file = new StreamReader(@"C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_console/Words.txt"))
             {
                 string line;
                 while ((line = file.ReadLine()) != null)
@@ -120,7 +120,7 @@ namespace FiveWordsFiveLetters_wpf
             else
             {
                 var result = (dynamic)e.Result;
-                ResultLabel.Content = $"Found {result.Combinations} combinations.";
+                CombinationsLabel.Content = $"Combinations: {result.Combinations}";
 
                 // Calculate the final elapsed time in minutes, seconds, and milliseconds
                 TimeSpan elapsed = result.Time;

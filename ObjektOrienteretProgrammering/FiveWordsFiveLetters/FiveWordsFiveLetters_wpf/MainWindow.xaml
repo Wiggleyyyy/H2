@@ -10,7 +10,7 @@
         <Button Name="StartButton"  Content="Start" HorizontalAlignment="Left" Margin="302,127,0,0" VerticalAlignment="Top" Height="43" Width="172" Click="Button_Click"/>
         <ProgressBar Name="ProgressBar" HorizontalAlignment="Left" Height="24" Margin="216,271,0,0" VerticalAlignment="Top" Width="344"/>
         <Label Name="PercentLabel" Content="Percent: 0%" HorizontalAlignment="Left" Margin="216,242,0,0" VerticalAlignment="Top" Width="335"/>
-        <Label Name="ResultLabel" Content="result: " HorizontalAlignment="Left" Margin="231,317,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
+        <Label Name="ResultLabel" Content="Result: " HorizontalAlignment="Left" Margin="231,317,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
         <Label Name="CombinationsLabel" Content="Combinations: 0" HorizontalAlignment="Left" Margin="231,342,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
         <Label x:Name="TimeLabel" Content="Time: 0" HorizontalAlignment="Left" Margin="231,367,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
 
