@@ -96,7 +96,11 @@ namespace FiveWordsFiveLetters_wpf
         {
             // Update the progress bar and percentage label
             ProgressBar.Value = e.ProgressPercentage;
-            PercentLabel.Content = $"Percent: {e.ProgressPercentage}%";
+            PercentLabel.Content = $"Percent: {ProgressBar.Value}%";
+            if (ProgressBar.Value == 99)
+            {
+                ProgressBar.Value +=1;
+            }
 
             // Extract the combination count and time from the UserState object
             dynamic state = e.UserState;

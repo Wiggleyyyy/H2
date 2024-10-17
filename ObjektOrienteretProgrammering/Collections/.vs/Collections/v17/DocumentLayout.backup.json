@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\results.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:results.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\collections\\linkedlistcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:collections\\linkedlistcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\benchmark\\benchmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:benchmark\\benchmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\collections\\arrayunknownsizecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:collections\\arrayunknownsizecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\collections\\concurrentlistcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:collections\\concurrentlistcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\results.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:results.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\collections\\listcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:collections\\baselinecollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\benchmark\\benchmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:benchmark\\benchmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\collectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:collectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\basecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:basecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\collections\\rng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBF9E49D-166B-4195-A65C-AC3908BB80B2}|Collections.csproj|solutionrelative:rng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,56 +46,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:31:19.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ConcurrentListCollection.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ConcurrentListCollection.cs",
+              "RelativeDocumentMoniker": "Collections\\ConcurrentListCollection.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ConcurrentListCollection.cs",
+              "RelativeToolTip": "Collections\\ConcurrentListCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:44:01.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArrayUnknownSizeCollection.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ArrayUnknownSizeCollection.cs",
+              "RelativeDocumentMoniker": "Collections\\ArrayUnknownSizeCollection.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ArrayUnknownSizeCollection.cs",
+              "RelativeToolTip": "Collections\\ArrayUnknownSizeCollection.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:26:04.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LinkedListCollection.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\LinkedListCollection.cs",
+              "RelativeDocumentMoniker": "Collections\\LinkedListCollection.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\LinkedListCollection.cs",
+              "RelativeToolTip": "Collections\\LinkedListCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:21:50.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ListCollection.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ListCollection.cs",
               "RelativeDocumentMoniker": "Collections\\ListCollection.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\ListCollection.cs",
               "RelativeToolTip": "Collections\\ListCollection.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T12:25:28.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Benchmark.cs",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Benchmark\\Benchmark.cs",
-              "RelativeDocumentMoniker": "Benchmark\\Benchmark.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Benchmark\\Benchmark.cs",
-              "RelativeToolTip": "Benchmark\\Benchmark.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:09:38.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "results.txt",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\results.txt",
-              "RelativeDocumentMoniker": "results.txt",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\results.txt",
-              "RelativeToolTip": "results.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-16T10:44:03.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BaseLineCollections.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\BaseLineCollections.cs",
               "RelativeDocumentMoniker": "Collections\\BaseLineCollections.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Collections\\BaseLineCollections.cs",
               "RelativeToolTip": "Collections\\BaseLineCollections.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwB8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T10:41:43.979Z",
               "EditorCaption": ""
@@ -99,18 +129,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RNG.cs",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\RNG.cs",
-              "RelativeDocumentMoniker": "RNG.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\RNG.cs",
-              "RelativeToolTip": "RNG.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "Benchmark.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Benchmark\\Benchmark.cs",
+              "RelativeDocumentMoniker": "Benchmark\\Benchmark.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Benchmark\\Benchmark.cs",
+              "RelativeToolTip": "Benchmark\\Benchmark.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:38:36.151Z"
+              "WhenOpened": "2024-10-16T12:09:38.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "results.txt",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\results.txt",
+              "RelativeDocumentMoniker": "results.txt",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\results.txt*",
+              "RelativeToolTip": "results.txt*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-16T10:44:03.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CollectionTester.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\CollectionTester.cs",
               "RelativeDocumentMoniker": "CollectionTester.cs",
@@ -119,31 +162,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T10:38:07.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseCollection.cs",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\BaseCollection.cs",
-              "RelativeDocumentMoniker": "BaseCollection.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\BaseCollection.cs",
-              "RelativeToolTip": "BaseCollection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:37:48.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:31:19.323Z",
-              "EditorCaption": ""
             }
           ]
         }

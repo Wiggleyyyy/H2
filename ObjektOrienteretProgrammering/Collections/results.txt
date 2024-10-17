@@ -1,11 +1,29 @@
 BaseLineCollection: 
 - Fill: 12 ms
-- Sort: 0 ms
+- Sort: 0 ms // NOT IMPLEMENTED
 - Print: 26 ms
 - Total :38 ms
 
 ListCollection: 
 - Fill: 8 ms
-- Sort: 0 ms
+- Sort: 0 ms // NOT IMPLEMENTED
 - Print: 6 ms
 - Total :14 ms
+
+LinkedListCollection:
+- Fill: 24 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 41 ms
+- Total: 65 ms
+
+ArrayUnknownCollection:
+- Fill: 11 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 17 ms
+- Total: 28 ms
+
+ConcurrentListCOllection:
+- Fill: 13 ms 
+- Sort: 9 ms
+- Print: 19 ms
+- Total: 41ms
