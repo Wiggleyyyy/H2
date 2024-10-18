@@ -7,6 +7,7 @@ internal class CollectionTester<T>
     Func<string, T> _stringToT;
     Func<T, T> _comparer;
     private List<BaseCollection<T>> _collection = new List<BaseCollection<T>>();
+
     public CollectionTester(string[] input, Func<string, T> stringToT, Func<T, T> comparer)
     {
         _inputStrings = input;
@@ -18,6 +19,7 @@ internal class CollectionTester<T>
     {
         _collection.Add(collection);
     }
+
     public int Count()
     {
         return _collection.Count;

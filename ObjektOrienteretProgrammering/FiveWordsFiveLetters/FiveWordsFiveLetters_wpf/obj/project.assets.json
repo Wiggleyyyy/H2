@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "script/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/script.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/script.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "script/1.0.0": {
+      "type": "project",
+      "path": "../script/script.csproj",
+      "msbuildProject": "../script/script.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "script >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\HFGF\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\script\\script.csproj": {
+              "projectPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\script\\script.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

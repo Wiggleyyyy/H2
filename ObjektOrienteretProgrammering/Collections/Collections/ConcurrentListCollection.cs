@@ -42,7 +42,7 @@ namespace Collections.Collections
             lock (_lock)
             {
                 // Sorting the list in a thread-safe way
-                _data.Sort();  // Assuming default sorting or provide comparison logic
+                /*_data.Sort();*/  // Assuming default sorting or provide comparison logic
             }
         }
 

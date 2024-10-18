@@ -19,3 +19,7 @@ C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLet
 C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\obj\Release\net8.0-windows\FiveWordsFiveLetters_wpf.pdb
 C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\obj\Release\net8.0-windows\FiveWordsFiveLetters_wpf.genruntimeconfig.cache
 C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\obj\Release\net8.0-windows\ref\FiveWordsFiveLetters_wpf.dll
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\bin\Release\net8.0-windows\script.dll
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\bin\Release\net8.0-windows\script.pdb
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\obj\Release\net8.0-windows\FiveWordsFiveLetters_wpf.csproj.AssemblyReference.cache
+C:\Users\HFGF\Documents\GitHub\H2\ObjektOrienteretProgrammering\FiveWordsFiveLetters\FiveWordsFiveLetters_wpf\obj\Release\net8.0-windows\FiveWord.751AF996.Up2Date

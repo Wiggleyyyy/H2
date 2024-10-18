@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiveWordsFiveLetters_wpf", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiveWordsFiveLetters", "..\FiveWordsFiveLetters_console\FiveWordsFiveLetters.csproj", "{6951E8BB-6635-43A7-8387-482BD57B045D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "script", "..\script\script.csproj", "{7E31AC5D-F155-497E-A1F5-19038EBF13EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6951E8BB-6635-43A7-8387-482BD57B045D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6951E8BB-6635-43A7-8387-482BD57B045D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6951E8BB-6635-43A7-8387-482BD57B045D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E31AC5D-F155-497E-A1F5-19038EBF13EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E31AC5D-F155-497E-A1F5-19038EBF13EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E31AC5D-F155-497E-A1F5-19038EBF13EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E31AC5D-F155-497E-A1F5-19038EBF13EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

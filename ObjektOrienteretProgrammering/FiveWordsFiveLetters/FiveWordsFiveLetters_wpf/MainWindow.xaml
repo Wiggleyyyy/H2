@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Name="StartButton"  Content="Start" HorizontalAlignment="Left" Margin="302,127,0,0" VerticalAlignment="Top" Height="43" Width="172" Click="Button_Click"/>
-        <ProgressBar Name="ProgressBar" HorizontalAlignment="Left" Height="24" Margin="216,271,0,0" VerticalAlignment="Top" Width="344"/>
-        <Label Name="PercentLabel" Content="Percent: 0%" HorizontalAlignment="Left" Margin="216,242,0,0" VerticalAlignment="Top" Width="335"/>
-        <Label Name="ResultLabel" Content="Result: " HorizontalAlignment="Left" Margin="231,317,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
-        <Label Name="CombinationsLabel" Content="Combinations: 0" HorizontalAlignment="Left" Margin="231,342,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
-        <Label x:Name="TimeLabel" Content="Time: 0" HorizontalAlignment="Left" Margin="231,367,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
+        <Button Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="405,123,0,0" VerticalAlignment="Top" Height="43" Width="172" Click="Button_Click"/>
+        <ProgressBar Name="ProgressBar" HorizontalAlignment="Left" Height="24" Margin="319,267,0,0" VerticalAlignment="Top" Width="344"/>
+        <Label Name="PercentLabel" Content="Percent: 0%" HorizontalAlignment="Left" Margin="319,238,0,0" VerticalAlignment="Top" Width="335"/>
+        <Label Name="ResultLabel" Content="Result: " HorizontalAlignment="Left" Margin="319,297,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
+        <Label Name="CombinationsLabel" Content="Combinations: 0" HorizontalAlignment="Left" Margin="319,322,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
+        <Label x:Name="TimeLabel" Content="Time: 0" HorizontalAlignment="Left" Margin="319,347,0,0" VerticalAlignment="Top" Height="25" Width="243"/>
 
+        <!-- ListBox to display found combinations -->
+        <ListBox Name="CombinationsListBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Height="400"/>
+        <Button Content="Download" HorizontalAlignment="Left" Margin="405,193,0,0" VerticalAlignment="Top" Width="172" Click="DownloadButton_Click"/>
     </Grid>
 </Window>

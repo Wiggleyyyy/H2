@@ -1,14 +1,15 @@
+ ==== INT: ====
 BaseLineCollection: 
 - Fill: 12 ms
 - Sort: 0 ms // NOT IMPLEMENTED
 - Print: 26 ms
-- Total :38 ms
+- Total: 38 ms
 
 ListCollection: 
 - Fill: 8 ms
 - Sort: 0 ms // NOT IMPLEMENTED
 - Print: 6 ms
-- Total :14 ms
+- Total: 14 ms
 
 LinkedListCollection:
 - Fill: 24 ms
@@ -26,4 +27,51 @@ ConcurrentListCOllection:
 - Fill: 13 ms 
 - Sort: 9 ms
 - Print: 19 ms
-- Total: 41ms
+- Total: 41 ms
+
+ ==== OBJECT: ====
+BaseLineCollection: 
+- Fill: 29 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 53 ms
+- Total: 82 ms
+
+ListCollection: 
+- Fill: 31 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 63 ms
+- Total: 94 ms
+
+LinkedListCollection:
+- Fill: 55 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 19 ms
+- Total: 74 ms
+
+ArrayUnknownCollection:
+- Fill: 21 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 8 ms
+- Total: 29 ms
+
+ConcurrentListCollection:
+- Fill: 46 ms
+- Sort: 0 ms // NOT IMPLEMENTED
+- Print: 20 ms
+- Total: 66 ms
+
+ ==== COMPARISON ====
+
+int total time (ms) 
+1. ListCollection (14 ms)
+2. ArrayUnknownSizeCollection (28 ms)
+3. BaseLineCollection (38 ms)
+4. ConcurrentListCollection (41 ms)
+5. LinkedListCollection (65 ms)
+
+MyObject total time (ms)
+1. ArrayUnknownSizeCollection (29ms)
+2. ConcurrentListCollection (66ms)
+3. LinkedListCollection (74ms)
+4. BaseLineCollection (82ms)
+5. ListCollection (94ms)

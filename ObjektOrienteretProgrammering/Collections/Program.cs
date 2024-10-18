@@ -2,37 +2,51 @@
 using Collections;
 using Collections.Benchmark;
 using Collections.Collections;
-using System.Security.Cryptography.X509Certificates;
-/// <summary>
-/// ConsoleProgram testing different collections
-/// Size of collections is between 50000 to 250000 (Same size for all)
-/// CollectionTest class has to inharent from CollectionTestClass
-/// Every test have to call, FillCollection, SortCollection and PrintCollection.
-/// </summary>
-var dynamicSize = RNG.Range(50000, 250000);
-var input = new string[dynamicSize];
-for (var i = 0; i < dynamicSize; i++)
+using Collections.DataModels;
+using System;
+
+public class Program
 {
-    input[i] = RNG.Range(0, dynamicSize + 1).ToString();
-}
+    public static void Main()
+    {
+        // Step 1: Initialize Random Number Generator
+        Random random = new Random();
 
-var tests = new CollectionTester<int>(input, x => int.Parse(x), x => x);
+        // Step 2: Generate dynamic size for the test collections
+        int dynamicSize = random.Next(50000, 250000);
+        var input = new string[dynamicSize];
 
-//Add collections
-tests.Add(new BaseLineCollection<int>());
-//tests.Add(new ListCollection<int>());
-//tests.Add(new LinkedListCollection<int>());
-//tests.Add(new ArrayUnknownSizeCollection<int>());
-//tests.Add(new ConcurrentListCollection<int>());
+        // Generate random numbers and text as input
+        for (var i = 0; i < dynamicSize; i++)
+        {
+            input[i] = random.Next(0, dynamicSize + 1).ToString();
+        }
 
-//Test all collections.
-Console.WriteLine($"Testing collection size is {dynamicSize}.");
-tests.RunAllTest();
-//BenchmarkRunner.Run<CollectionBenchmark>();
-Console.WriteLine("Press anykey...");
-Console.ReadKey();
+        // Step 3: Initialize CollectionTester with MyObject type
+        var tests = new CollectionTester<MyObject>(
+            input,
+            x => new MyObject(int.Parse(x), $"Text_{x}"), // Function to convert string to MyObject
+            x => x // No specific sorting logic applied here
+        );
 
-int StringToInt(string s)
-{
-    return int.Parse(s);
+        // Step 4: Add different collections to the tester
+        //tests.Add(new BaseLineCollection<MyObject>());
+        //tests.Add(new ListCollection<MyObject>());
+        //tests.Add(new LinkedListCollection<MyObject>());
+        //tests.Add(new ArrayUnknownSizeCollection<MyObject>());
+        tests.Add(new ConcurrentListCollection<MyObject>());
+
+        // Step 5: Print the size of the collection being tested
+        Console.WriteLine($"Testing collection size is {dynamicSize}.");
+
+        // Step 6: Run all the collection tests
+        tests.RunAllTest();
+
+        // Step 7: Run the BenchmarkDotNet benchmark for the CollectionBenchmark class
+        //BenchmarkRunner.Run<CollectionBenchmark>();
+
+        // Wait for user input to exit
+        Console.WriteLine("Press any key...");
+        Console.ReadKey();
+    }
 }
