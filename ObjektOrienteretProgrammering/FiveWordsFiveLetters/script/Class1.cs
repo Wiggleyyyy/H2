@@ -58,16 +58,24 @@ namespace script
         public List<string> LoadWords(string filePath, int wordLength)
         {
             var words = new List<string>();
-            using (var file = new StreamReader(filePath))
+            try
             {
-                string line;
-                while ((line = file.ReadLine()) != null)
+                using (var file = new StreamReader(filePath))
                 {
-                    if (line.Length == wordLength && line.Distinct().Count() == wordLength)
+                    string line;
+                    while ((line = file.ReadLine()) != null)
                     {
-                        words.Add(line);
+                        if (line.Length == wordLength && line.Distinct().Count() == wordLength)
+                        {
+                            words.Add(line);
+                        }
                     }
                 }
+            }
+            catch (IOException ex)
+            {
+                Debug.WriteLine($"Error reading file {filePath}: {ex.Message}");
+                throw; // Re-throw the exception to be handled by the calling method
             }
             return words;
         }
@@ -87,20 +95,28 @@ namespace script
             // Use Parallel.ForEach to process words concurrently
             Parallel.ForEach(Partitioner.Create(0, totalWords), range =>
             {
-                for (int i = range.Item1; i < range.Item2; i++)
+                try
                 {
-                    // Create an array for selectedWords
-                    var selectedWords = new string[numWords];
-                    selectedWords[0] = words[i]; // Initialize the first word
-
-                    // Find combinations for the current word
-                    FindCombinations(words, wordBitmasks, selectedWords, 1, wordBitmasks[i], i + 1, allCombinations, numWords);
-
-                    // Report progress every 100 iterations
-                    if (System.Threading.Interlocked.Increment(ref completedIterations) % 100 == 0)
+                    for (int i = range.Item1; i < range.Item2; i++)
                     {
-                        reportProgress((completedIterations * 100) / totalWords, stopwatch.Elapsed);
+                        // Create an array for selectedWords
+                        var selectedWords = new string[numWords];
+                        selectedWords[0] = words[i]; // Initialize the first word
+
+                        // Find combinations for the current word
+                        FindCombinations(words, wordBitmasks, selectedWords, 1, wordBitmasks[i], i + 1, allCombinations, numWords);
+
+                        // Atomically increment and calculate progress
+                        int currentIteration = System.Threading.Interlocked.Increment(ref completedIterations);
+                        if (currentIteration % 100 == 0)
+                        {
+                            reportProgress((currentIteration * 100) / totalWords, stopwatch.Elapsed);
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error processing word range {range.Item1}-{range.Item2}: {ex.Message}");
                 }
             });
 

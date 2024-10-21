@@ -16,6 +16,6 @@
 
         <!-- ListBox to display found combinations -->
         <ListBox Name="CombinationsListBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Height="400"/>
-        <Button Content="Download" HorizontalAlignment="Left" Margin="405,193,0,0" VerticalAlignment="Top" Width="172" Click="DownloadButton_Click"/>
+        <Button Name="DownloadButton" Content="Download" HorizontalAlignment="Left" Margin="405,193,0,0" VerticalAlignment="Top" Width="172" Click="DownloadButton_Click"/>
     </Grid>
 </Window>

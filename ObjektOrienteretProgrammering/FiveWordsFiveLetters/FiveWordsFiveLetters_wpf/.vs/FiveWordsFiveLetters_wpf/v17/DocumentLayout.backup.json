@@ -7,14 +7,21 @@
       "RelativeMoniker": "D:0:0:{1D954386-5243-43F5-9D82-DA4E378E31C1}|FiveWordsFiveLetters_wpf.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E31AC5D-F155-497E-A1F5-19038EBF13EC}|..\\script\\script.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\script\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6951E8BB-6635-43A7-8387-482BD57B045D}|..\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\fivewordsfiveletters_console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\BaseCollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D954386-5243-43F5-9D82-DA4E378E31C1}|FiveWordsFiveLetters_wpf.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\fivewordsfiveletters_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1D954386-5243-43F5-9D82-DA4E378E31C1}|FiveWordsFiveLetters_wpf.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E31AC5D-F155-497E-A1F5-19038EBF13EC}|..\\script\\script.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\script\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D954386-5243-43F5-9D82-DA4E378E31C1}|FiveWordsFiveLetters_wpf.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\fivewordsfiveletters_wpf\\fivewordsfiveletters_wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D954386-5243-43F5-9D82-DA4E378E31C1}|FiveWordsFiveLetters_wpf.csproj|solutionrelative:fivewordsfiveletters_wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6951E8BB-6635-43A7-8387-482BD57B045D}|..\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\fivewordsfiveletters_console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6951E8BB-6635-43A7-8387-482BD57B045D}|..\\FiveWordsFiveLetters_console\\FiveWordsFiveLetters.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\fivewordsfiveletters\\fivewordsfiveletters_console\\words.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -27,11 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "BaseCollection.cs",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\BaseCollection.cs",
+              "RelativeDocumentMoniker": "..\\..\\Collections\\BaseCollection.cs",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\Collections\\BaseCollection.cs",
+              "RelativeToolTip": "..\\..\\Collections\\BaseCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:23:37.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FiveWordsFiveLetters_wpf.csproj",
+              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
+              "RelativeDocumentMoniker": "FiveWordsFiveLetters_wpf.csproj",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\FiveWordsFiveLetters_wpf.csproj",
+              "RelativeToolTip": "FiveWordsFiveLetters_wpf.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-18T08:13:06.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\Program.cs",
               "RelativeDocumentMoniker": "..\\FiveWordsFiveLetters_console\\Program.cs",
@@ -39,25 +71,24 @@
               "RelativeToolTip": "..\\FiveWordsFiveLetters_console\\Program.cs",
               "ViewState": "AgIAAG4AAAAAAAAAAAAowIMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:41:24.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T06:41:24.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\script\\Class1.cs",
               "RelativeDocumentMoniker": "..\\script\\Class1.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\script\\Class1.cs",
               "RelativeToolTip": "..\\script\\Class1.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAcwH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T12:16:12.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -69,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Words.txt",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_console\\Words.txt",
               "RelativeDocumentMoniker": "..\\FiveWordsFiveLetters_console\\Words.txt",
@@ -77,8 +108,7 @@
               "RelativeToolTip": "..\\FiveWordsFiveLetters_console\\Words.txt",
               "ViewState": "AgIAAG2lBQAAAAAAAAAAAISlBQAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-16T11:50:50.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T11:50:50.781Z"
             },
             {
               "$type": "Document",
@@ -86,9 +116,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwGkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\FiveWordsFiveLetters\\FiveWordsFiveLetters_wpf\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAIwJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T11:47:08.968Z",
               "EditorCaption": ""
