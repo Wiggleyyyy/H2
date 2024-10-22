@@ -36,23 +36,69 @@ class PluklisteProgram
 
                 try
                 {
-                    using (FileStream file = File.OpenRead(files[index]))
+                    var currentFile = files[index];
+                    if (currentFile.ToLower().EndsWith(".xml"))
                     {
-                        XmlSerializer xmlSerializer = new XmlSerializer(typeof(Pluklist));
-                        var pickList = (Pluklist?)xmlSerializer.Deserialize(file);
-                        _pickList = pickList; //set new var for accessibility later
-
-                        // print picklist
-                        if (pickList != null && pickList.Lines != null)
+                        try
                         {
-                            Console.WriteLine("\n{0, -13}{1}", "Name:", pickList.Name);
-                            Console.WriteLine("{0, -13}{1}", "Forsendelse:", pickList.Shipment);
-
-                            Console.WriteLine("\n{0,-7}{1,-9}{2,-20}{3}", "Antal", "Type", "Produktnr.", "Navn");
-                            foreach (var item in pickList.Lines)
+                            using (FileStream file = File.OpenRead(currentFile))
                             {
-                                Console.WriteLine("{0,-7}{1,-9}{2,-20}{3}", item.Amount, item.Type, item.ProductID, item.Title);
+                                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Pluklist));
+                                var pickList = (Pluklist?)xmlSerializer.Deserialize(file);
+                                _pickList = pickList; // set new var for accessibility later
+
+                                // Call the method to print picklist
+                                PrintPicklist(_pickList);
                             }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Error processing XML file: {ex.Message}");
+                        }
+                    }
+                    else if (currentFile.ToLower().EndsWith(".csv"))
+                    {
+                        try
+                        {
+                            using (var reader = new StreamReader(currentFile))
+                            {
+                                List<Item> csvItems = new List<Item>();
+                                while (!reader.EndOfStream)
+                                {
+                                    var line = reader.ReadLine();
+                                    var values = line.Split(','); // Assuming comma-separated values
+
+                                    if (values.Length >= 4)
+                                    {
+                                        // Create Item from CSV row
+                                        Item item = new Item
+                                        {
+                                            ProductID = values[0],
+                                            Title = values[1],
+                                            Type = (ItemType)Enum.Parse(typeof(ItemType), values[2], true), // Ensure proper parsing of enum
+                                            Amount = int.Parse(values[3])
+                                        };
+
+                                        csvItems.Add(item);
+                                    }
+                                }
+
+                                // Set _pickList and print
+                                _pickList = new Pluklist
+                                {
+                                    Name = "CSV Picklist",  // Assign default name or handle CSV file metadata separately
+                                    Shipment = "Unknown",   // You can extend CSV structure to include these
+                                    Address = "Unknown",    // You can extend CSV structure to include these
+                                    Lines = csvItems
+                                };
+
+                                // Call the method to print picklist
+                                PrintPicklist(_pickList);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Error processing CSV file: {ex.Message}");
                         }
                     }
                 }
@@ -92,9 +138,10 @@ class PluklisteProgram
             }
             PrintOption("Genindlæs pluksedler", standardColor);
             if (_pickList.Lines.Any(x => x.Type == ItemType.Print)) // only display option if printable
-            {           
+            {
                 PrintOption("Vejledning", standardColor);
             }
+
             readKey = Console.ReadKey().KeyChar;
             if (readKey >= 'a') readKey -= (char)('a' - 'A'); //HACK: To upper
 
@@ -167,6 +214,22 @@ class PluklisteProgram
             finally
             {
                 Console.ForegroundColor = standardColor; // reset color
+            }
+        }
+    }
+
+    // Refactored method to print the picklist
+    static void PrintPicklist(Pluklist pickList)
+    {
+        if (pickList != null && pickList.Lines != null)
+        {
+            Console.WriteLine("\n{0, -13}{1}", "Name:", pickList.Name);
+            Console.WriteLine("{0, -13}{1}", "Forsendelse:", pickList.Shipment);
+
+            Console.WriteLine("\n{0,-7}{1,-9}{2,-20}{3}", "Antal", "Type", "Produktnr.", "Navn");
+            foreach (var item in pickList.Lines)
+            {
+                Console.WriteLine("{0,-7}{1,-9}{2,-20}{3}", item.Amount, item.Type, item.ProductID, item.Title);
             }
         }
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Pluklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Thomas Jørgensen</Name>
+  <Name>Hans Jensen</Name>
   <Forsendelse>GLS</Forsendelse>
-  <Adresse>Faaborgvej 5, 5500 Middelfart</Adresse>
+  <Adresse>Svendborgvej 55, 5600 Faaborg</Adresse>
   <Lines>
     <Item>
       <ProductID>NETGEAR-CM1000</ProductID>

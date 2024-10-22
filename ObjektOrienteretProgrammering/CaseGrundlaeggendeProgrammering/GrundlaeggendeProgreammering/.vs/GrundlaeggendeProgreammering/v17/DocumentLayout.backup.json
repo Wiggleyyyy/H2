@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\casegrundlaeggendeprogrammering\\grundlaeggendeprogreammering\\picklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|solutionrelative:picklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\casegrundlaeggendeprogrammering\\grundlaeggendeprogreammering\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\export\\638118766706624322_export.XML||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\bin\\Debug\\net8.0\\export\\638118769816626011_export.XML||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\export\\638118769816626011_export.XML||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|c:\\users\\hfgf\\documents\\github\\h2\\objektorienteretprogrammering\\casegrundlaeggendeprogrammering\\grundlaeggendeprogreammering\\picklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAD2E23-62B7-406B-BBD6-93D321E8B5A6}|GrundlaeggendeProgreammering.csproj|solutionrelative:picklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,52 +26,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "638118769816626011_export.XML",
-              "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\bin\\Debug\\net8.0\\export\\638118769816626011_export.XML",
-              "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\export\\638118769816626011_export.XML",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\bin\\Debug\\net8.0\\export\\638118769816626011_export.XML",
-              "RelativeToolTip": "bin\\Debug\\net8.0\\export\\638118769816626011_export.XML",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-10-22T10:32:25.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "638118766706624322_export.XML",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\bin\\Debug\\net8.0\\export\\638118766706624322_export.XML",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\export\\638118766706624322_export.XML",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\bin\\Debug\\net8.0\\export\\638118766706624322_export.XML",
               "RelativeToolTip": "bin\\Debug\\net8.0\\export\\638118766706624322_export.XML",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-10-22T09:13:11.78Z",
+              "WhenOpened": "2024-10-22T11:48:09.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "pickList.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\pickList.cs",
               "RelativeDocumentMoniker": "pickList.cs",
               "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\pickList.cs",
               "RelativeToolTip": "pickList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T08:16:00.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAOIAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\HFGF\\Documents\\GitHub\\H2\\ObjektOrienteretProgrammering\\CaseGrundlaeggendeProgrammering\\GrundlaeggendeProgreammering\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAQwCEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T08:13:42.984Z",
               "EditorCaption": ""
