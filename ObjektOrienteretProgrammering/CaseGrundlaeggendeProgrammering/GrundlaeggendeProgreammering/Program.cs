@@ -1,30 +1,25 @@
-﻿using Microsoft.VisualBasic.FileIO;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Xml;
+﻿using Plukliste;
 using System.Xml.Serialization;
-
-namespace Plukliste;
+using System.Xml;
+using System.Net.Http.Headers;
 
 class PluklisteProgram
 {
     static void Main()
     {
         //Arrange
-        char readKey = ' '; // input key
-        List<string> files;
         var index = -1;
         var standardColor = Console.ForegroundColor;
+        Pluklist _pickList = new Pluklist();
 
         // check and create import dir
         Directory.CreateDirectory("import");
 
         // load files from dir
-        files = LoadFiles("export");
+        List<string> files = LoadFiles("export");
 
         // ACT loop
+        char readKey = ' '; // input key
         while (readKey != 'Q')
         {
             if (files.Count == 0)
@@ -45,13 +40,13 @@ class PluklisteProgram
                     {
                         XmlSerializer xmlSerializer = new XmlSerializer(typeof(Pluklist));
                         var pickList = (Pluklist?)xmlSerializer.Deserialize(file);
+                        _pickList = pickList; //set new var for accessibility later
 
                         // print picklist
                         if (pickList != null && pickList.Lines != null)
                         {
                             Console.WriteLine("\n{0, -13}{1}", "Name:", pickList.Name);
                             Console.WriteLine("{0, -13}{1}", "Forsendelse:", pickList.Shipment);
-                            //TODO: Add adresse to screen print
 
                             Console.WriteLine("\n{0,-7}{1,-9}{2,-20}{3}", "Antal", "Type", "Produktnr.", "Navn");
                             foreach (var item in pickList.Lines)
@@ -80,8 +75,26 @@ class PluklisteProgram
             }
 
             // print options
-            PrintOptions(index, files.Count, standardColor);
+            Console.WriteLine("\n\nOptions:");
+            PrintOption("Quit", standardColor);
 
+            if (index >= 0)
+            {
+                PrintOption("Aflsut plukseddel", standardColor);
+            }
+            if (index > 0)
+            {
+                PrintOption("Forrige plukseddel", standardColor);
+            }
+            if (index < files.Count - 1)
+            {
+                PrintOption("Næste plukseddel", standardColor);
+            }
+            PrintOption("Genindlæs pluksedler", standardColor);
+            if (_pickList.Lines.Any(x => x.Type == ItemType.Print)) // only display option if printable
+            {           
+                PrintOption("Vejledning", standardColor);
+            }
             readKey = Console.ReadKey().KeyChar;
             if (readKey >= 'a') readKey -= (char)('a' - 'A'); //HACK: To upper
 
@@ -104,7 +117,6 @@ class PluklisteProgram
                         if (index < files.Count - 1) index++;
                         break;
                     case 'A':
-                        // move files to import dir
                         var fileWithoutPath = Path.GetFileName(files[index]);
                         var destinationPath = Path.Combine("import", fileWithoutPath);
                         File.Move(files[index], destinationPath);
@@ -113,7 +125,37 @@ class PluklisteProgram
                         if (index == files.Count) index--;
                         break;
                     case 'V':
-                        //generate html file
+                        var printItem = _pickList.Lines.FirstOrDefault(x => x.ProductID.StartsWith("PRINT-"));
+                        if (printItem != null)
+                        {
+                            string outputFilePath = string.Empty;
+                            string templateFilePath = string.Empty;
+                            switch (printItem.ProductID)
+                            {
+                                case "PRINT-OPGRADE":
+                                    templateFilePath = $@"Templates\PRINT-OPGRADE.html";
+                                    outputFilePath = $@"Print\Print_Opgrade_{DateTime.Now:yyyyMMdd_HHmmSS}.html";
+                                    break;
+                                case "PRINT-OPSIGELSE":
+                                    templateFilePath = $@"Templates\PRINT-OPSIGELSE.html";
+                                    outputFilePath = $@"Print\Print_Opsigelse_{DateTime.Now:yyyyMMdd_HHmmSS}.html";
+                                    break;
+                                case "PRINT-WELCOME":
+                                    templateFilePath = $@"Templates\PRINT-WELCOME.html";
+                                    outputFilePath = $@"Print\Print_Welcome_{DateTime.Now:yyyyMMdd_HHmmSS}.html";
+                                    break;
+                            }
+
+                            if (!String.IsNullOrEmpty(outputFilePath) && !String.IsNullOrEmpty(templateFilePath))
+                            {
+                                PrintPluklisteToHtml(_pickList, templateFilePath, outputFilePath);
+                            }
+
+                            Console.Clear();
+                            Console.ForegroundColor = standardColor;
+                            Console.WriteLine("Vejledning oprettet.\n\n");
+                        }
+
                         break;
                 }
             }
@@ -126,6 +168,37 @@ class PluklisteProgram
             {
                 Console.ForegroundColor = standardColor; // reset color
             }
+        }
+    }
+
+    static void PrintPluklisteToHtml(Pluklist pickList, string templatePath, string outputFilePath)
+    {
+        try
+        {
+            string htmlContent = File.ReadAllText(templatePath);
+
+            htmlContent = htmlContent.Replace("[Adresse]", pickList.Address ?? "[Ingen Adresse]");
+            htmlContent = htmlContent.Replace("[Name]", pickList.Name ?? "[Intet navn]");
+            if (htmlContent.Contains("[Plukliste]"))
+            {
+                System.Text.StringBuilder pickListStringBuilder = new System.Text.StringBuilder();
+                pickListStringBuilder.AppendLine("<table>");
+                pickListStringBuilder.AppendLine("<tr><th>Antal</th><th>Type</th><th>Produktnr.</th><th>Navn</th></tr>");
+                foreach (var item in pickList.Lines)
+                {
+                    pickListStringBuilder.AppendLine($"<tr><td>{item.Amount}</td><td>{item.Type}</td><td>{item.ProductID}</td><td>{item.Title}</td></tr>");
+                }
+                pickListStringBuilder.AppendLine("</table>");
+                htmlContent = htmlContent.Replace("[Plukliste]", pickListStringBuilder.ToString());
+            }
+
+            File.WriteAllText(outputFilePath, htmlContent);
+            Console.WriteLine($"HTML file successfully generated: {outputFilePath}");
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red; //status red
+            Console.WriteLine($"Der skete en fejl ved indlæsning af template: {ex.Message}");
         }
     }
 
@@ -143,29 +216,7 @@ class PluklisteProgram
         }
     }
 
-    //print options
-    static void PrintOptions(int index, int fileCount, ConsoleColor standardColor)
-    {
-        Console.WriteLine("\n\nOptions:");
-        PrintOptionsItem("Quit", standardColor);
-
-        if (index >= 0)
-        {
-            PrintOptionsItem("Aflsut plukseddel", standardColor);
-        }
-        if (index > 0)
-        {
-            PrintOptionsItem("Forrige plukseddel", standardColor);
-        }
-        if (index < fileCount - 1)
-        {
-            PrintOptionsItem("Næste plukseddel", standardColor);
-        }
-        PrintOptionsItem("Genindlæs pluksedler", standardColor);
-        PrintOptionsItem("Vejledning", standardColor);
-    }
-
-    static void PrintOptionsItem(string word, ConsoleColor standardColor)
+    static void PrintOption(string word, ConsoleColor standardColor)
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write(word[0]);

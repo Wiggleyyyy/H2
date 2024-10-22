@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrundlaeggendeProgreammering")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8de866ced4d89ca7fdb4bf59ade263cc611c8e07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b98075d561d1cdbc8b5a95c03ffb6201c4b1efa")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrundlaeggendeProgreammering")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrundlaeggendeProgreammering")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
